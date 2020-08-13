@@ -1,0 +1,7 @@
+20180001	Hong Gildong	84	100
+20161124	Jeong Jihwna	89	93
+20180002	Lee Jieun	92	89
+20180009	Lee Yeonghee	81	84
+20200001	Kim Kidong	69	78
+20180011	Ha Donghun	58	68
+20200002	Dulli	43	67
