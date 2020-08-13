@@ -1,22 +1,15 @@
 T = int(input())
 for _ in range(T):
-    n = int(input())
+    ls = list(map(int, input().split()))
     
-    check = [False for i in range(n)]
-    ls = []
-    for i in range(n):
-        s,t = map(int, input().split())
-        ls.append([s,t])
-    
-    ls.sort(key = lambda e : e[1])
-    time = ls[0][1]
-    cnt = 1
-    
-    for i in range(1, len(ls)):
-        if ls[i][0] > time:
-            time = ls[i][1]
-            cnt+=1
-            
-    print(cnt)
-            
-            
+    maxval = 0
+    total = 0
+    for i in ls[::-1]:
+        total += i
+        if total > maxval:
+            maxval = total
+        if total < 0:
+            total = 0
+    if max(ls)<0:
+        maxval = max(ls)
+    print(maxval)
