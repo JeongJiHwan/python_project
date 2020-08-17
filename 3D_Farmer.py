@@ -22,7 +22,7 @@ def minDist(ls, dic):
         return calcDist(ls, dic)
     else:
         mid = len(ls)//2
-        L = ls[0:mid]
+        L = ls[0:mid-1] 
         print(L)
         R = ls[mid:]
         print(R)
